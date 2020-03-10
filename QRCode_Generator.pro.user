@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.11.0, 2020-03-04T23:54:00. -->
+<!-- Written by QtCreator 4.11.0, 2020-03-09T17:21:49. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -230,8 +230,9 @@
     <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:F:/code/QR code/QRCode_Generator-master/QRCode_Generator/QRCode_Generator.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">F:/code/QR code/QRCode_Generator-master/QRCode_Generator/QRCode_Generator.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">QRCode_Generator2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:E:/code/-QRCode_Generator/QRCode_Generator.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">E:/code/-QRCode_Generator/QRCode_Generator.pro</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
