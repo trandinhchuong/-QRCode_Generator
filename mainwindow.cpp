@@ -30,15 +30,17 @@ void MainWindow::on_generateButton_pressed()
 {
     bool image_loadfailure = false;
     bool invalid_qrimage = false;
-
+    QString text = ui->textEdit->toPlainText();
+    string str = text.toStdString();
+    str.c_str();
     int qrcode_width = ui->qrcodepixmapLabel->width();
     int qrcode_height = ui->qrcodepixmapLabel->height();
-    QRController* controller = new QRController(ui->lineEdit->text().toUtf8().constData(), eclMedium, qrcode_width, qrcode_height, evAuto);
+    QRController* controller = new QRController(str, eclMedium, qrcode_width, qrcode_height, evAuto);
     int suitablepixlength = 0;
     bool checkresult = controller->getSuitablePixLength(suitablepixlength);
     if (true == checkresult){
         delete controller;
-        controller = new QRController(ui->lineEdit->text().toUtf8().constData(), eclMedium, suitablepixlength, suitablepixlength, evAuto);
+        controller = new QRController(str, eclMedium, suitablepixlength, suitablepixlength, evAuto);
 #ifdef DEBUG_LOGOUT_ON
         qDebug("Resize QRCode pixlength from (%d) to (%d)", qrcode_width, suitablepixlength);
 #endif
