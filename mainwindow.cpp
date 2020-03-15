@@ -238,8 +238,15 @@ void MainWindow::on_pushButton_4_clicked()
 
     QString mString;
 
-    mString = ui->lineEdit_Cty->text();
+    mString=mString+"Cty: ";
+    mString =mString+ ui->lineEdit_Cty->text();
+    mString=mString+"\nSản phẩm: ";
     mString=mString+ui->lineEdit_sanpham->text();
+    mString=mString+"\nNgày SX: ";
+    mString=mString+ui->lineEdit_nnk->text();
+    mString=mString+"\nNước SX: ";
+    mString=mString+ui->lineEdit_nuocsx->text();
+
 
     QPixmap pixmap;
     QPainter pixPaint(&pixmap);
@@ -249,14 +256,14 @@ void MainWindow::on_pushButton_4_clicked()
 
 
 
-    QPixmap pix;
-    QPainter painter( &pix );
+//    QPixmap pix;
+//    QPainter painter( &pix );
 
-    painter.setFont( QFont("Arial") );
-    painter.drawText( QPoint(100, 100), "Hello" );
+//    painter.setFont( QFont("Arial") );
+//    painter.drawText( QPoint(100, 100), "Hello" );
 
 
-    //ui->qrcodepixmapLabel_TEMPHU->text(mString);
+    ui->qrcodepixmapLabel_TEMPHU->setText(mString);
 
     qDebug() << mString ;
 

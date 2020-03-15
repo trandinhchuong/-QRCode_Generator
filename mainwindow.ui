@@ -250,7 +250,7 @@ QRCode.png</string>
     <property name="geometry">
      <rect>
       <x>180</x>
-      <y>650</y>
+      <y>730</y>
       <width>93</width>
       <height>29</height>
      </rect>
@@ -259,13 +259,13 @@ QRCode.png</string>
      <string>TẠO TEM PHỤ</string>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>380</y>
       <width>471</width>
-      <height>261</height>
+      <height>341</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -314,7 +314,7 @@ QRCode.png</string>
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
-        <widget class="QLineEdit" name="lineEdit_6"/>
+        <widget class="QLineEdit" name="lineEdit_nuocsx"/>
        </item>
        <item>
         <widget class="QLabel" name="label_15">
