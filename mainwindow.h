@@ -27,6 +27,10 @@ private slots:
 
     void on_lineEdit_cursorPositionChanged(int arg1, int arg2);
 
+    void on_pushButton_4_clicked();
+
+    void on_saveFileButton_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

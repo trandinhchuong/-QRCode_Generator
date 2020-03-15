@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-
+#include <QPixmap>
+#include <QPainter>
+#include <qpaintdevice.h>
 static const QString SAVE_TO_PNG(QString("Save imagefile to\nQRCode.png"));
 static const QString SAVE_TO_JPG(QString("Save imagefile to\nQRCode.jpg"));
 static const QString SAVE_TO_BMP(QString("Save imagefile to\nQRCode.bmp"));
@@ -221,4 +223,43 @@ void MainWindow::on_comboBox_currentIndexChanged(const QString &arg1)
     ui->saveFileButton->setText(savetofile_buttonStr);
 }
 
+
+
+void MainWindow::on_pushButton_4_clicked()
+{
+
+//    QString mString;
+//    mString = ui->lineEdit->text();
+//    qDebug() << mString ;
+
+//QLabel* label_PM= new QLabel(this);
+//QPixmap PM ("C:/PM.jpg");
+//label_PM->setPixmap(PM);
+
+    QString mString;
+
+    mString = ui->lineEdit_Cty->text();
+    mString=mString+ui->lineEdit_sanpham->text();
+
+    QPixmap pixmap;
+    QPainter pixPaint(&pixmap);
+    QPen myPen( Qt::green);
+    pixPaint.setPen(myPen);
+    pixPaint.drawLine(5,5, 10,10);
+
+
+
+    QPixmap pix;
+    QPainter painter( &pix );
+
+    painter.setFont( QFont("Arial") );
+    painter.drawText( QPoint(100, 100), "Hello" );
+
+
+    //ui->qrcodepixmapLabel_TEMPHU->text(mString);
+
+    qDebug() << mString ;
+
+
+}
 
